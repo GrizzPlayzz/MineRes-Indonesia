@@ -1,0 +1,522 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #00b4db, #8e44ad, #28a745);
+    color: white;
+    text-align: center;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
+}
+
+.logo h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00b4db;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid;
+    transition: 0.2s linear;
+}
+
+.hero {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #00b4db, #8e44ad, #28a745);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content button {
+    padding: 10px 20px;
+    background-color: #00b4db;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero-content button:hover {
+    background-color: #8e44ad;
+}
+
+.content-section {
+    padding: 50px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.content-section h3 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h4 {
+    font-size: 1.5rem;
+    margin: 20px 0 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.creator-name {
+    font-size: 0.9rem;
+    color: #00b4db;
+    font-weight: 700;
+}
+
+.download-btn {
+    padding: 10px 15px;
+    background-color: #00b4db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #8e44ad;
+}
+
+footer {
+    background-color: #222;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+/* Mengatur ukuran nama kreator */
+.card-footer .creator-name {
+    font-size: 12px; /* Perkecil ukuran font nama kreator */
+    color: #666; /* Berikan warna abu-abu agar lebih kontras */
+    font-weight: 400;
+}
+
+/* Memperkecil tombol unduh */
+.card-footer .download-btn {
+    font-size: 14px; /* Perkecil ukuran font tombol */
+    padding: 8px 12px; /* Sesuaikan padding agar tombol tidak terlalu besar */
+    background-color: #4CAF50; /* Warna hijau */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.card-footer .download-btn:hover {
+    background-color: #45a049; /* Warna saat hover */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-top: auto;
+}
+
+footer p {
+    font-size: 14px;
+    color: #bbb;
+}
+/* Tambahan untuk Rekomendasi dan Card Footer */
+.rekomendasi-section {
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    margin-top: 20px;
+}
+
+.rekomendasi-section h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.rekomendasi-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.rekomendasi-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    width: 300px;
+    max-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+}
+
+.rekomendasi-card:hover {
+    transform: scale(1.05);
+}
+
+.rekomendasi-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.rekomendasi-card h4 {
+    padding: 15px 20px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.rekomendasi-card p {
+    padding: 0 20px;
+    margin-bottom: 15px;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.rekomendasi-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.creator-name {
+    font-style: italic;
+    color: #ddd;
+    font-size: 14px;
+}
+
+.more-btn {
+    padding: 8px 12px;
+    background-color: #00cc66;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.more-btn:hover {
+    background-color: #0099ff;
+}
+/* Gaya untuk FAQ */
+.faq-section {
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    margin-top: 20px;
+}
+
+.faq-section h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.faq-item h4 {
+    margin: 0;
+    font-size: 18px;
+    cursor: pointer; /* Menandakan bahwa judul dapat diklik */
+}
+
+.faq-answer {
+    margin: 5px 0 0;
+    color: #ccc;
+    font-size: 14px;
+    display: none; /* Awalnya disembunyikan */
+}
+.arrow {
+    font-size: 18px;
+    transition: transform 0.3s ease; /* Animasi rotasi */
+}
+/* Hamburger Menu */
+.hamburger-menu {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1001; /* Agar selalu di atas */
+}
+.hamburger.active {
+    position: fixed;
+}
+
+.hamburger {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Animasi tombol hamburger saat aktif */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Tersembunyi di luar layar awalnya */
+    width: 300px;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.9); /* Lebih gelap */
+    color: white;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    padding-top: 60px; /* Supaya tidak menutupi header */
+}
+
+.sidebar.active {
+    left: 0; /* Geser ke dalam layar */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+/* Mengimpor font kustom dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+
+/* Sidebar */
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif; /* Gunakan font Poppins */
+    font-weight: 700; /* Buat font lebih tebal */
+    padding: 10px;
+    display: block;
+    transition: color 0.3s ease; /* Transisi untuk efek hover */
+}
+
+/* Menambahkan efek hover pada link sidebar */
+.sidebar ul li a:hover {
+    color: white; /* Mengubah warna link saat di-hover */
+    background-color: #00ff99;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+/* Konten di dalam sidebar */
+.sidebar-content {
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.section-content {
+    display: none; /* Tersembunyi awalnya */
+}
+.sidebar-content h3 {
+    background-color: #00ff99;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+.section-content.active {
+    display: block; /* Tampilkan saat aktif */
+}
+
+/* Gaya untuk memastikan hamburger tetap di posisi atas saat digeser */
+header {
+    position: relative;
+    z-index: 999; /* Supaya header dan hamburger di atas konten lain */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+/* Gaya untuk ikon media sosial */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.social-icon {
+    margin: 0 10px;
+    color: white; /* Ubah warna sesuai tema website Anda */
+    font-size: 24px; /* Ukuran ikon */
+    transition: transform 0.3s ease; /* Animasi saat hover */
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Membesar saat di-hover */
+}
+/* Gaya untuk container iklan dengan rasio 16:9 dan border mewah */
+.ad-container {
+    width: 100%;
+    max-width: 640px; /* Bisa disesuaikan, ini adalah batas maksimum */
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* Ini adalah rasio 16:9 (9/16 = 0.5625) */
+    margin: 20px auto;
+    background-color: #ffffff;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    background-image: linear-gradient(white, white), 
+                      linear-gradient(to right, #00f260, #0575e6); /* Gradasi border */
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Gaya untuk gambar iklan */
+.ad-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+/* Gaya untuk Header */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333; /* Background header */
+    color: white;
+}
+
+.site-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Membuat logo menjadi lingkaran */
+    object-fit: cover; /* Mengatur gambar agar tetap rapi */
+    transition: transform 0.3s ease; /* Efek transisi saat hover */
+}
+
+/* Animasi logo saat hover */
+.site-logo:hover {
+    transform: scale(1.1); /* Sedikit membesarkan logo saat dihover */
+}
+/* Gaya untuk logo di bagian bawah sidebar */
+.sidebar-logo {
+    margin-top: auto; /* Meletakkan logo di bagian paling bawah */
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar-logo-img {
+    width: 200px; /* Atur lebar logo */
+    height: auto; /* Menjaga proporsi asli logo */
+    opacity: 0.8; /* Sedikit transparansi untuk tampilan yang lembut */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Efek hover pada logo */
+.sidebar-logo-img:hover {
+    opacity: 1; /* Menghilangkan transparansi saat di-hover */
+    transform: scale(1.1); /* Memperbesar logo sedikit saat di-hover */
+}
