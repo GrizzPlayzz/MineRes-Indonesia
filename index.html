@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MineRes - Rekomendasi Hari Ini</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <head>
+    <!-- Tambahkan link ini di bagian <head> file HTML Anda -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <h1>MineRes</h1>
+            <h1>Indonesia</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="addon.html">Addon</a></li>
+                <li><a href="map.html">Map</a></li>
+                <li><a href="patch.html">Patch</a></li>
+                <li><a href="texture.html">Texture</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Tombol Hamburger -->
+<div class="hamburger-menu">
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+<!-- Sidebar -->
+<div class="sidebar">
+    <ul>
+        <li><a href="#" data-section="tentang">Tentang</a></li>
+        <li><a href="#" data-section="donasi">Donasi</a></li>
+        <li><a href="#" data-section="kontak">Kontak</a></li>
+    </ul>
+
+    <!-- Konten Sidebar -->
+    <div class="sidebar-content">
+        <div id="tentang" class="section-content">
+            <h3>Tentang Kami</h3>
+            <p>Kami adalah komunitas yang menyediakan sumber daya Minecraft seperti addon, map, texture, dan patch.</p>
+        </div>
+        <div id="donasi" class="section-content">
+            <h3>Donasi</h3>
+            <p>Anda dapat mendukung kami dengan berdonasi melalui platform seperti saweria.co/mineresindonesia</p>
+        </div>
+        <div id="kontak" class="section-content">
+            <h3>Kontak Kami</h3>
+            <p>Hubungi kami melalui email: contact@mineres.online atau melalui media sosial kami.</p>
+            </div>
+    </div>
+    <!-- Logo di bagian bawah sidebar -->
+<div class="sidebar-logo">
+    <img src="logo/logo.png" alt="Logo Website" class="sidebar-logo-img">
+</div>
+</div>
+    
+    <!-- Area Iklan -->
+<div class="ad-container">
+    <img id="ad-image" src="" alt="Iklan" />
+</div>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Selamat Datang</h2>
+            <p>  MineRes bertujuan untuk jadi sumber daya yang lengkap bagi para pencinta Minecraft, Kami Memudahkan pengguna menemukan dan mengunduh apa yang mereka butuhkan dengan cepat dan efisien. Terima Kasih!</p>
+        </div>
+    </section>
+
+    <section class="rekomendasi-section">
+        <h3>Rekomendasi Teratas</h3>
+        <div class="rekomendasi-container">
+            <!-- Kartu 1 -->
+            <div class="rekomendasi-card">
+                <img src="assets/addon.jpg" alt="Addon">
+                <h4>Estidama Craft</h4>
+                <p>Jelajahi pemandangan indah dan satwa liar di UEA sambil mempelajari tentang keberlanjutan dalam segala bentuknya! 5 aktivitas unik akan memandu Anda menuju perubahan perilaku berkelanjutan. • Dunia besar dengan 5 bioma khusus • Kendaraan ramah lingkungan dan barang-barang khusus • Hewan dan tumbuhan adat • 10 kulit tradisional UEA</p>
+                <div class="rekomendasi-footer">
+                    <span class="creator-name">by Blockworks</span>
+                    <a href="#" class="more-btn download-link" data-link="https://mcmarketplace.net/pdp?id=aeb36283-adbc-4d23-be9d-e0c9564bee0c">Unduh Sekarang</a>
+                </div>
+            </div>
+            <!-- Kartu 2 -->
+            <div class="rekomendasi-card">
+                <img src="assets/map.jpg" alt="Map">
+                <h4>The Maze Runner Map | REMAKE | BEDROCK (1.21+)</h4>
+                <p>Hai. Ini Hiru sekali lagi untuk peta Maze Runner lainnya. Seperti yang Anda lihat di judul, ini adalah REMAKE dari peta tersebut. Peta ini terinspirasi oleh versi _BidRyan.</p>
+                <div class="rekomendasi-footer">
+                    <span class="creator-name">by hiruu</span>
+                    <a href="#" class="more-btn download-link" data-link="https://moneyblink.com/xJz8EviVN">Unduh Sekarang</a>
+                </div>
+            </div>
+            <!-- Kartu 3 -->
+            <div class="rekomendasi-card">
+                <img src="assets/texture1.jpg" alt="Texture">
+                <h4>GrizzTweaks V3</h4>
+                <p>Texture ini mencakup dominan 80% 16x16 dengan 20% nya 32x32 texture yang pastinya cocok untuk dipakai dalam gameplay survival atau digunakan untuk lainnya yang pastinya akan menambah penampilan yang lebih keren dan membuat minecraft kalian lebih berwarna.</p>
+                <div class="rekomendasi-footer">
+                    <span class="creator-name">by GrizzPlayzz</span>
+                    <a class="more-btn download-link" data-link="https://youtu.be/0zYLnWcgztI?si=YYntVjbsoCn_uf81">Unduh Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <h3>Bingung? Lihat Disini</h3>
+        <div class="faq-item">
+            <h4 class="faq-title">Cara Mengunduh? <span class="arrow">&#9660;</span></h4>
+            <p class="faq-answer">Setelah menemukan addon map patch texture, klik tombol 'Download' atau 'Unduh'. Ikuti instruksi yang muncul di layar untuk menyelesaikan proses pengunduhan dengan cepat dan mudah.</p>
+        </div>
+        <div class="faq-item">
+            <h4 class="faq-title">Mencari Sesuatu? <span class="arrow">&#9660;</span></h4>
+            <p class="faq-answer">Gunakan fitur pencarian di bagian atas halaman teks berupa 'Addon' 'Map' 'Patch' 'Texture' untuk menemukan konten.</p>
+        </div>
+        <div class="faq-item">
+            <h4 class="faq-title">Gratis atau Berbayar? <span class="arrow">&#9660;</span></h4>
+            <p class="faq-answer">Sebagian besar konten yang tersedia di sini adalah gratis.</p>
+        </div>
+        <div class="faq-item">
+            <h4 class="faq-title">Mendaftarkan Akun? <span class="arrow">&#9660;</span></h4>
+            <p class="faq-answer">Beberapa situs mungkin memerlukan pembuatan akun untuk mengunduh konten, namun sebagian besar memungkinkan Anda mengunduh tanpa registrasi.</p>
+        </div>
+        <div class="faq-item">
+            <h4 class="faq-title">Memiliki Komunitas? <span class="arrow">&#9660;</span></h4>
+            <p class="faq-answer">Ya, kami memiliki komunitas yang aktif dan berkembang. Anda dapat bergabung dengan kami melalui berbagai saluran, termasuk forum online serta media sosial. Komunitas kami adalah tempat yang tepat untuk berbagi tips, bertukar ide, dan mendiskusikan addon, map, patch, serta texture terbaru untuk Minecraft. Kami selalu menyambut anggota baru yang ingin bergabung dan berkontribusi dalam memperkaya pengalaman bermain Minecraft.</p>
+        </div>
+        <div class="faq-item">
+            <h4 class="faq-title">Mengunggah Konten? <span class="arrow">&#9660;</span></h4>
+            <p class="faq-answer">Kamu bisa mengunggah kontenmu di website ini dengan cara chat instagram kami di @mineres_indonesia Pastikan kamu menggunakan bahasa yang sopan.</p>
+        </div>
+        
+    </section>
+    <footer>
+    <div class="social-icons">
+        <a href="https://whatsapp.com/channel/0029Val7hSpDuMRkHHXvcX2S" target="_blank" class="social-icon" aria-label="Facebook">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.tiktok.com/@mineres_indonesia?_t=8qZQqPiiSgh&_r=1" target="_blank" class="social-icon" aria-label="Twitter">
+            <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://www.instagram.com/mineres_indonesia/profilecard/?igsh=ZG82ZjI3NXZqYTJ4" target="_blank" class="social-icon" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+        
+    <p>© 2024 MineRes Indonesia. All rights reserved.</p>
+</footer>
+    <!-- Link ke Script.js -->
+    <script src="script.js"></script>
+</body>
+</html>
